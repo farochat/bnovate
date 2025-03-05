@@ -6,14 +6,14 @@ Afin que le petit programme fonction. Veuillez d'abord vous assurez que les él�
 
 - PostgreSQL
 - Python (testé sur 3.10)
-- git?
+- git
 
 ## 2. Installation
 
 Clone the repository:
 ```bash
-git clone <repository_address>
-cd <repository_folder>
+git clone git@github.com:farochat/bnovate
+cd bnovate
 ```
 
 Create a virtual environment `.venv` and activate it
@@ -23,19 +23,19 @@ python -m venv .venv && . .venv/bin/activate
 
 Install dependencies:
 ```bash
-pip install --constraint requirements.txt
+pip install --constraint requirements.txt .[dev]
 ```
 ## 3. Setup
 Create a `config.yaml` file with the following fields:
 ```yaml
 bnovate:
-    database: your_database_name
-    host: localhost
-    port: 5432
-    user: your_user
-    password: your_password
+  host: host
+  port: port
+  database: dbname
+  user: user
+  password: password
 ```
-Store in at the root of the repository.
+Store in at the root of the repository and complete the fields accordingly.
 **Important: make sure to assign new database for the test as this can have a bad impact on existing ones.**
 
 Run the database initialization script (only once):
@@ -53,7 +53,7 @@ python app.py
 Local tests are included in `test_upload.py`.
 
 ## 5. Usage
-
+Open a new terminal window and reactivate python virtual environment
 ### Uploading CSV files
 ```bash
 python upload.py path/to/csvfiles_folder
