@@ -1,0 +1,11 @@
+.venv*/
+*.pyd
+*.pyc
+*.ini
+*.yaml 
+*egg-info/
+build/
+__pycache__/
+test_download/
+static/
+uploads/
