@@ -17,6 +17,7 @@ setup(
         "pyyaml",
         "flask",
         "psycopg2-binary",
+        "matplotlib",
         "shapely",
     ],
     extras_require={
