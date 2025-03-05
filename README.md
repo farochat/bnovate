@@ -79,8 +79,7 @@ python download.py path/to/download_folder
 - This design allows polygons to be shared between users without duplication.
 
 ### Test Assumptions
-- For simplicity, each user currently has only one polygon.
-- This results in some redundant fields (e.g., username and user_id).
+- For simplicity, each user currently has only one polygon. This results in some redundant fields (e.g., username and user_id).
 - Users are emulated by the scripts, and there is no real authentication mechanism.
 - Versioning for polygons was ignored.
 
